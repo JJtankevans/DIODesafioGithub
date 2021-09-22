@@ -1,0 +1,57 @@
+- cmp -> Faz comparação entre arquivos
+- diff -> Mostra a diferença entre arquivos de texto
+- route -n -> Mostra todas as tabelas de roteamento ip do pc
+- grep palavra -> Procura um texto dentro do arquivo desejado
+- shutdown -h tempo-> Deslica o computador depois de determinado tempo
+======================== Commands for Users ============================
+- adduser nomedousuario -> autoexplicativo
+- su nomeudousuario -> troca de usuários
+- passwd nomedousuairo -> muda a senha do usuário
+- lastlog -> mostra algumas infos dos usuários do sistema
+- last -> lista de entrada e saída do usuário no sistema
+- id -> mostra informações de ID's do usuário
+- cat /etc/passwd -> mostra todos os usuáiros
+- userdel -r nomedousuario -> remove o usuario e a pasta pessoal dele
+- cat /etc/group -> mostra todos os grupos do sistema
+- groups -> exibe todos os grupos que nosso usuário pertence
+- addgroup nomedogrupo -> cria um grupo de permissões
+- adduser usuairo grupo -> adciona um usuário a um grupo
+- gpasswd -a usuario grupo-> adciona um usuário a um grupo
+- gpasswd -d usuario grupo -> remove um usuário de um grupo
+- groupdel nomedogrup-> remove um grupo
+
+============================= Permissões ==============================
+- r -> read | w -> write | x -> eXecution
+- ls -lh -> Verifica as permissões em um diretório
+- chmod -> muda a permissão de um arquivo ou diretório
+
+============================= Compactação =============================
+- gzip nomeDoArquivo -> Serve para compactar um arquivo
+- gunzip nomeDoArquivo -> Serve para descompactar um arquivo .gz
+- gzip -9 nomeDoArquivo -> Usa a taxa de compactação maxima
+- zip nomdeDoArquivo.zip nomeDoArquivo -> O primeiro nome é de como
+  ficara o nome do arquivo compactado o segundo é o nome do arquivo que
+  deverá ser compactado
+- unzip nomeDoArquivo.zip -> Descompacta o arquivo
+- bzip2 nomeDoArquivo -> Compactador mais atual .bz2
+- bzip2 -d nomeDoArquivo.bz2 -> Descompacta o arquivo
+- rar a nomeDoArquivo.rar nomeDoArquivo -> Compactador de arquivos .rar
+- rar x nomeDoArquivo.rar -> descompacta um arquivo
+============================= Arquivador =============================
+- tar -cf nomeDoArquivo.tar nomeDosArquivos -> ele pode arquivar mais de um arquivo
+- tar -xvf nomeDoArquivo.tar.gz -> descompacta arquivos que foram arquivados com o tar e compactados com gzip
+- tar -xvf nomeDoArquivo.tar.gz -C -> descompacta para o diretório que vc passar
+===================== Gerencimaneto de Pacotes =======================
+- apt -> genrenciador padrão 
+- sudo apt remove pacote -> remove um pacot
+- pkgs.org rpm.pbhone.net -> São fornecedores de programas para distros linux
+- dpkg -i nomeDoPacoteBaixado -> vai instalar o programa que baixou .deb
+- dpkg -l nomeDoPacote -> mostra informações do pacote .deb
+- dpkg -r nomeDoPacto -> remove um pacode
+- rpm -ivh nomeDoPacote -> é o instalador de pacotes do fedora
+- rpm -U nomeDoPacote.rpm -> serve para atualizar o pacote
+- rpm -e nomeDoPacote.rpm -> serve para remover pacote
+- yum install nomeDoPacote -> faz instalação de pacotes rpm
+- yum update nomeDoPacote -> atualiza o pacote
+- yum remove nomeDoPacote -> remove um pacote
+- 
